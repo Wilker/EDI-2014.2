@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Exercicio3.o \
+	${OBJECTDIR}/Exercicio6.o \
 	${OBJECTDIR}/Exercicio1.o \
 	${OBJECTDIR}/main.o
 
@@ -68,6 +69,11 @@ ${OBJECTDIR}/Exercicio3.o: Exercicio3.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.c) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/Exercicio3.o Exercicio3.c
+
+${OBJECTDIR}/Exercicio6.o: Exercicio6.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.c) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/Exercicio6.o Exercicio6.c
 
 ${OBJECTDIR}/Exercicio1.o: Exercicio1.c 
 	${MKDIR} -p ${OBJECTDIR}
