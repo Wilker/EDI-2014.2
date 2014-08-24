@@ -38,7 +38,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/Exercicio3.o \
 	${OBJECTDIR}/Exercicio6.o \
 	${OBJECTDIR}/Exercicio1.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/Exercicio10.o
 
 
 # C Compiler Flags
@@ -84,6 +85,11 @@ ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.c) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.c
+
+${OBJECTDIR}/Exercicio10.o: Exercicio10.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.c) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Exercicio10.o Exercicio10.c
 
 # Subprojects
 .build-subprojects:
