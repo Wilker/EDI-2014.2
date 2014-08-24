@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Exercicio3.o \
 	${OBJECTDIR}/Exercicio1.o \
 	${OBJECTDIR}/main.o
 
@@ -62,6 +63,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ed2014.2_lista_1.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ed2014.2_lista_1 ${OBJECTFILES} ${LDLIBSOPTIONS} 
+
+${OBJECTDIR}/Exercicio3.o: Exercicio3.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.c) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Exercicio3.o Exercicio3.c
 
 ${OBJECTDIR}/Exercicio1.o: Exercicio1.c 
 	${MKDIR} -p ${OBJECTDIR}
