@@ -17,6 +17,11 @@ int main(int argc, char** argv) {
     int grana;
     scanf("%d",&grana);
     printf("Qnt nota -> %d\n",total_de_notas(grana));
+    
+    printf("Insira um inteiro");
+    int n;
+    scanf("%d",&n);
+    imprime_binario(n);
  
     system("PAUSE");
     return (EXIT_SUCCESS);
