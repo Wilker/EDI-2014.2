@@ -38,7 +38,7 @@ int main(int argc, char** argv) {
     int x[]={1,2,3,4,11,6,7,8,9,10};
     printf("A ordem e -> %d\n", ordenado(v,10));
     printf("A ordem e -> %d\n", ordenado(u,10));
-    printf("A ordem e -> %d\n", ordenado(x,10));*/
+    printf("A ordem e -> %d\n", ordenado(x,10));
     
     //Teste do Exercício 12
     float a1, a2, a3;
@@ -57,6 +57,17 @@ int main(int argc, char** argv) {
     scanf("%d", &fal);
     char c = situacao(a1,a2,a3,fal,aul,&media);
     printf("A situacao deste aluno e -> %c e a media dele e  -> %f",c,media);
+    */
+    
+    
+    float dist, v1, v2; 
+    printf("Insira a distancia percorrida \n");
+    scanf("%f",&dist);
+    printf("A distancia e...%f \n",dist);
+    calcula_corrida(dist, &v1, &v2);
+    printf("O Valor a ser pago e %f na bandera 1 e %f na bandeira 2 \n",v1,v2);
+    
+    
     system("PAUSE");
     return (EXIT_SUCCESS);
 }

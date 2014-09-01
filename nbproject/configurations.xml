@@ -6,6 +6,8 @@
                    projectFiles="true">
       <itemPath>Exercicio1.h</itemPath>
       <itemPath>Exercicio10.h</itemPath>
+      <itemPath>Exercicio12.h</itemPath>
+      <itemPath>Exercicio13.h</itemPath>
       <itemPath>Exercicio3.h</itemPath>
       <itemPath>Exercicio6.h</itemPath>
     </logicalFolder>
@@ -14,6 +16,8 @@
                    projectFiles="true">
       <itemPath>Exercicio1.c</itemPath>
       <itemPath>Exercicio10.c</itemPath>
+      <itemPath>Exercicio12.c</itemPath>
+      <itemPath>Exercicio13.c</itemPath>
       <itemPath>Exercicio3.c</itemPath>
       <itemPath>Exercicio6.c</itemPath>
       <itemPath>main.c</itemPath>
