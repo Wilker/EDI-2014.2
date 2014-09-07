@@ -17,7 +17,33 @@ a um mesmo participante. O protótipo da função é:
 int *premiados(int n, int *inscr, float *t1, int p1,
 float *t2, int p2, int *tam);*/
 
+#include "Exercicio20.h"
+
 int *premiados(int n, int *inscr, float *t1, int p1, float *t2, int p2, int *tam){
-    
-    
+    int qntMaiores = 0;
+    float maiorMedia = 0.0;
+    int i;
+    for (i = 0; i < n; i++) {
+        float p = ponderada(t1[i], p1, t2[i], p2);
+        if (p > maiorMedia)
+            maiorMedia = p;
+    }
+    for (i = 0; i < n; i++) {
+        float p = ponderada(t1[i], p1, t2[i], p2);
+        if (p >= maiorMedia)
+            qntMaiores++;
+    }
+    int *insc = (int*) malloc(qntMaiores * (sizeof (int)));
+    int j=0;
+    for (i = 0; i < n; i++) {
+        float p = ponderada(t1[i], p1, t2[i], p2);
+        if(p>=maiorMedia);
+        insc[j++]=inscr[i];
+        }
+    *tam = qntMaiores;
+    return insc;     
+}
+
+float ponderada(float t1, int p1, float t2, int p2) {
+    return (float) (t1 + t2) / (p1 + p2);
 }
