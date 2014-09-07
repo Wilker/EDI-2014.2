@@ -18,7 +18,7 @@ int *premiados(int n, int *inscr, float *t1, int p1,
 float *t2, int p2, int *tam);*/
 
 #include "Exercicio20.h"
-
+float ponderada(float t1, int p1, float t2, int p2);
 int *premiados(int n, int *inscr, float *t1, int p1, float *t2, int p2, int *tam){
     int qntMaiores = 0;
     float maiorMedia = 0.0;
