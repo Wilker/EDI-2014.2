@@ -1,8 +1,6 @@
 /*3)  Escreva  uma  função  RECURSIVA  que  recebe  como  parâmetro  um  valor  inteiro  e  imprime  a 
 representação binária deste número. A função deve ter o seguinte protótipo:
 void imprime_binario(int n);*/
-void imprime_binario(int n);
-
 
 void imprime_binario(int n){
     if(n==1){

@@ -8,5 +8,16 @@ int mdc(int a, int b);*/
 #include "Exercicio4.h"
 
 int mdc(int a, int b){
-    
+    if(b>a){
+        troca(&a,&b);
+    }if(a%b==0){
+        return b;
+    }else{
+     return(mdc(b,a%b));   
+    }    
+}
+void troca(int *a,int *b){
+    int temp = *b;
+ *b=*a;
+ *a= temp;
 }

@@ -11,6 +11,23 @@ de maior valor. Para o cálculo da raiz quadrada, utilize a função  sqrt  defi
 do C, que tem o protótipo double sqrt (double n);*/
 #include <math.h>
 #include "Exercicio11.h"
-void raizes(float a, float b, float c, float * x1, float * x2){
-    
+#define NRAIZ -99999.9
+
+int calcDet(int a, int b, int c);
+
+void raizes(float a, float b, float c, float * x1, float * x2) {
+    int det = calcDet(a, b, c);
+    printf("det..%d\n", det);
+    if (det < 0) *x1 = *x2 = NRAIZ;
+    else
+        if (det == 0) {
+ *x1 = (float) ((b*-1) / (2 * a));
+    } else {
+ *x1 = (float) ((b*-1)-(sqrt(det))) / (2 * a);
+ *x2 = (float) ((b*-1)+(sqrt(det))) / (2 * a);
+    }
+}
+
+int calcDet(int a, int b, int c) {
+    return (b * b) - (4 * a * c);
 }

@@ -45,6 +45,38 @@ armazenar  o  valor  referente  ao  i-ésimo  termo  da  série.  A  função  d
 novo vetor, conforme o protótipo:
 float* taylor_sen(int n, float x);*/
 
-float* taylor_sen(int n, float x){
-    
+// OBS: A Série de taylor para o seno está errada! Faltam o símbolo de + e
+// no divisor o correto é (2n+1)! 
+//Falta corrigir ainda!
+
+#include "Exercicio16.h"
+float fat(float n);
+float exp(float x, int n);
+float* taylor_sen(int n, float x);
+
+float* taylor_sen(int n, float x) {
+    float *v = (float*) malloc(sizeof (float) *n);
+    int i;
+    for (i = 0; i < n; i++) {
+        v[i] = (exp(-1, i) / fat(2 * i + 1)) * exp(x, 2 * i + 1);
+    }
+    return v;
+}
+
+float exp(float x, int n) {
+    int i;
+    if (!n) {
+        return 1.0;
+    } else {
+        float exp = x;
+        for (i = 1; i < n; i++) {
+            exp *= x;
+            return exp;
+        }
+    }
+}
+
+float fat(float n) {
+    if ((n == 0) || (n == 1))return 1.0;
+    else return n * fat(n - 1);
 }

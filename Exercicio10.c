@@ -4,7 +4,7 @@ representa o tamanho do vetor, e deve retornar 1, se o vetor está em ordem cres
 ordem decrescente, ou 0, se não está em ordem. Considere que o vetor não tem valores repetidos. O 
 protótipo da função é:
 int ordenado(int *vet, int n);*/
-
+#include "Exercicio10.h"
 int ordenado(int *vet, int n);
 
 int ordenado(int *vet, int n) {

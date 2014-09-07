@@ -7,7 +7,29 @@ receba  como  parâmetros  um  vetor  de  n  números  reais,  correspondendo  �
 experimento, e retorne um novo  vetor (alocado dinamicamente) sem os elementos do vetor original 
 que têm o maior e o menor valores (admita que n é sempre maior que 3).
 float* vet2(int n, float *vet1);*/
-float* vet2(int n, float *vet1){
-    
-}
 
+#include "Exercicio19.h"
+float* vet2(int n, float *vet1) {
+    float *v = (float*) malloc((n - 2) * sizeof (float));
+    int maior, menor;
+    maior = 0;
+    menor = 0;
+    int i;
+    for (i = 0; i < n; i++) {
+        printf("=>%f laco %d \n",vet1[i],i);
+        if (vet1[i] < vet1[menor]) {
+            menor = i;
+            printf("Agora o menor e %f na posicao %d \n", vet1[menor],i);
+        }
+        if (vet1[i] > vet1[maior]) {
+            maior = i;
+            printf("Agora o maior e %f na posicao %d \n", vet1[maior],i);
+        }
+    }
+    int j = 0;
+    for (i = 0; i < n; i++) {
+        if (i != maior && i != menor)
+            v[j++] = vet1[i];
+    }
+    return v;
+}

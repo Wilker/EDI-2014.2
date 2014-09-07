@@ -12,7 +12,7 @@ Número de Faltas                         Média                Situação   Ret
 Menor ou igual a 25% do total de aulas / Maior ou igual 6,0 / Aprovado / A
 Menor ou igual a 25% do total de aulas / Menor que 6,0      /Reprovado / R
 Maior que 25% do total de aulas        /Qualquer            / Reprovado por faltas / F*/
-
+#include "Exercicio12.h"
 char situacao(float p1, float p2, float p3, int faltas, int aulas, float *media);
 float med(float p1, float p2, float p3);
 

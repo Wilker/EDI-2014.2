@@ -6,7 +6,14 @@ calculado para k. Por exemplo, se for passado para essa função o vetor {2,10,1
 retornar o valor 8. Caso o vetor não corresponda a uma PA, a função deve retornar 0. Assuma que o 
 vetor sempre terá pelo menos três elementos. O cabeçalho da função é dado por:
 int teste_PA(int n, int *v);*/
-
-int teste_PA(int n, int *v){
-    
+#include "Exercicio7.h"
+int teste_PA(int n, int *v) {
+    int i;
+    int k;
+    k = v[0] - v[1];
+    for (i = 0; i < n - 1; i++) {
+        if (v[i] - v[i + 1] != k)
+            return 0;
+    }
+    return k*-1;
 }

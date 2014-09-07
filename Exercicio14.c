@@ -8,7 +8,8 @@ representando  o  intervalo  de  tempo.  Essa  função  deve  atualizar  as  va
 respectivamente,  com  o  valor  do  deslocamento  instantâneo  e  o  valor  da  velocidade  instantânea 
 calculados ao final do intervalo de tempo fornecido em  t, de acordo com as fórmulas apresentadas.
 void movimento(float *s, float *v, float a, float t);*/
-
-void movimento(float *s, float *v, float a, float t){
-    
+#include "Exercicio14.h"
+void movimento(float *s, float *v, float a, float t) {
+    *s = (*s)+(*v) * t + ((a * (t * t)) / 2);
+    *v = (*v) + a*t;
 }

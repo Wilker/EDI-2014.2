@@ -4,7 +4,9 @@ inteiro x, correspondendo ao primeiro elemento da PA, e o inteiro  k, representa
 retorna a soma dos k primeiros elementos da PA. O protótipo da função é:
 int soma_pa(int x, int k);*/
 
+#include "Exercicio5.h"
 
+// Ainda não implementado
 int soma_pa(int x, int k){
     
 }

@@ -4,7 +4,10 @@ Apresente uma definição recursiva para H(n)  e implemente o cálculo desse val
 RECURSIVA em C. A função deve ter o seguinte protótipo:
 double harmonico(int n);*/
 #include "Exercicio2.h"
-double harmonico(int n){
-    if(n==1) return 1;
-    else return (1/n)+ harmonico(n-1);         
+double harmonico(int n) {
+    if (n == 1) {
+        return (double)1 / n;
+    } else {
+        return (double)1 / n + harmonico(n - 1);
+    }
 }

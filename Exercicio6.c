@@ -3,7 +3,7 @@ e retorna o índice do maior valor armazenado nesse vetor. Considere que não h�
 nesse vetor. Essa função deve obedecer ao protótipo:
 int max_vet (int n, float *vet);*/
 
-int max_vet(int n, float *vet);
+#include "Exercicio6.h"
 
 int max_vet(int n, float *vet) {
     if (n <= 0) return -1;
