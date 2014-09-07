@@ -6,20 +6,44 @@
                    projectFiles="true">
       <itemPath>Exercicio1.h</itemPath>
       <itemPath>Exercicio10.h</itemPath>
+      <itemPath>Exercicio11.h</itemPath>
       <itemPath>Exercicio12.h</itemPath>
       <itemPath>Exercicio13.h</itemPath>
+      <itemPath>Exercicio14.h</itemPath>
+      <itemPath>Exercicio15.h</itemPath>
+      <itemPath>Exercicio16.h</itemPath>
+      <itemPath>Exercicio18.h</itemPath>
+      <itemPath>Exercicio19.h</itemPath>
+      <itemPath>Exercicio20.h</itemPath>
       <itemPath>Exercicio3.h</itemPath>
+      <itemPath>Exercicio4.h</itemPath>
+      <itemPath>Exercicio5.h</itemPath>
       <itemPath>Exercicio6.h</itemPath>
+      <itemPath>Exercicio7.h</itemPath>
+      <itemPath>Exercicio8.h</itemPath>
+      <itemPath>Exercicio9.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Arquivos de Código-Fonte"
                    projectFiles="true">
       <itemPath>Exercicio1.c</itemPath>
       <itemPath>Exercicio10.c</itemPath>
+      <itemPath>Exercicio11.c</itemPath>
       <itemPath>Exercicio12.c</itemPath>
       <itemPath>Exercicio13.c</itemPath>
+      <itemPath>Exercicio14.c</itemPath>
+      <itemPath>Exercicio15.c</itemPath>
+      <itemPath>Exercicio16.c</itemPath>
+      <itemPath>Exercicio18.c</itemPath>
+      <itemPath>Exercicio19.c</itemPath>
+      <itemPath>Exercicio20.c</itemPath>
       <itemPath>Exercicio3.c</itemPath>
+      <itemPath>Exercicio4.c</itemPath>
+      <itemPath>Exercicio5.c</itemPath>
       <itemPath>Exercicio6.c</itemPath>
+      <itemPath>Exercicio7.c</itemPath>
+      <itemPath>Exercicio8.c</itemPath>
+      <itemPath>Exercicio9.c</itemPath>
       <itemPath>main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"

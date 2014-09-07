@@ -69,5 +69,5 @@ int main(int argc, char** argv) {
     
     
     system("PAUSE");
-    return (EXIT_SUCCESS);
+    return (0);
 }
