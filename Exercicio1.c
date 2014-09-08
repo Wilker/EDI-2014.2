@@ -2,7 +2,7 @@
 2 e R$ 1, escreva um programa que capture um  valor  inteiro em reais (R$) e determine o  menor 
 número de notas para se obter o montante fornecido. A função deve ter o seguinte protótipo:
 int total_de_notas(int valor);*/
-int total_de_notas(int valor);
+#include "Exercicio1.h"
 
 int total_de_notas(int valor) {
     int cont = 0;

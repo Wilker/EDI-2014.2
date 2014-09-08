@@ -5,7 +5,7 @@ ordem decrescente, ou 0, se não está em ordem. Considere que o vetor não tem 
 protótipo da função é:
 int ordenado(int *vet, int n);*/
 #include "Exercicio10.h"
-int ordenado(int *vet, int n);
+
 
 int ordenado(int *vet, int n) {
     if (n <= 0)return 0;
