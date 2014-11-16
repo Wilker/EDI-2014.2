@@ -8,12 +8,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "AB.h"
+#include "ABB.h"
 /*
  * 
  */
 int main(int argc, char** argv) {
     //Exercício 1
-    Arv* raiz = arv_cria(2,
+    AB* raiz = arv_cria(2,
                          arv_cria(7,
                                    arv_cria(2,NULL,NULL),
                                    arv_cria(6,
@@ -28,7 +29,7 @@ int main(int argc, char** argv) {
     printf("\n");
     
     //Exercício 2
-    Arv* maior = maior_valor(raiz);
+    AB* maior = maior_valor(raiz);
     printf("%d\n", maior->info);
     
     //Exercício 3
@@ -38,6 +39,20 @@ int main(int argc, char** argv) {
     //Exercício 5
     int alt = altura(raiz);
     printf("%d\n", alt);
+    
+    //Exercício 7
+    ABB *r = NULL;
+     r = abb_insere(r,8);
+     r = abb_insere(r,3);
+     r = abb_insere(r,10);
+     r = abb_insere(r,1);
+     r = abb_insere(r,6);
+     r = abb_insere(r,14);
+     r = abb_insere(r,4);
+     r = abb_insere(r,7);
+     r = abb_insere(r,13);
+    arv_imprime(r);
+    printf("\n");
     
     system("pause");
     return (0);
