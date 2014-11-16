@@ -51,7 +51,7 @@ int main(int argc, char** argv) {
      r = abb_insere(r,4);
      r = abb_insere(r,7);
      r = abb_insere(r,13);
-     //arv_imprime(r);
+     arv_imprime(r);
     printf("\n");
     
     //Exercício 8
@@ -67,6 +67,23 @@ int main(int argc, char** argv) {
     int bin = verifica_abb(r);
     printf("%d  %d\n",nBin,bin);
     
+    //Exercício 12
+     ABB *r2 = NULL;
+     r2 = abb_insere(r2,8);
+     r2 = abb_insere(r2,3);
+     r2 = abb_insere(r2,10);
+     r2 = abb_insere(r2,1);
+     r2 = abb_insere(r2,6);
+     r2 = abb_insere(r2,14);
+     r2 = abb_insere(r2,41);
+     r2 = abb_insere(r2,7);
+     r2 = abb_insere(r2,13);
+     arv_imprime(r2);
+     printf("\n");
+     int similar1 = similares(r,r);
+     int similar2 = similares(r,r2);
+    printf("Similar\n%d  %d\n",similar1,similar2);
+     
     system("pause");
     return (0);
 }

@@ -18,6 +18,7 @@ typedef struct ABB {
  int maior_valorABB(ABB* a);
  ABB* menor_valorABB(ABB* a);
  int verifica_abb(ABB* a);
+int similares(ABB* a1, ABB* a2);
 
 
 #endif	/* ABB_H */

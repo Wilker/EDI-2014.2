@@ -42,6 +42,22 @@ int verifica_abb(ABB* a) {
         if (a->dir->info > a->info)
             esq = verifica_abb(a->dir);
         else return 0;
-    return dir&&esq;
-    
+    return dir && esq;
+
+}
+
+int similares(ABB* a1, ABB* a2) {
+    if ((!a1) && (!a2))
+        return 1;
+    if((a1&&!a2)||(!a1&&a2))return 0;
+    if ((a1->info) == (a2->info)) {
+        if (similares(a1->esq, a2->esq) &&
+                similares(a1->dir, a2->dir)) {
+            return 1;
+        } else {
+            return 0;
+        }
+    } else {
+        return 0;
+    }
 }
