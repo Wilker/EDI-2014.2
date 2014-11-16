@@ -20,5 +20,6 @@ Arv* arv_cria(int x, Arv* sae, Arv* sad);
 void arv_libera (Arv* a);
 int arv_contem (Arv* a, int x);
 void arv_imprime (Arv* a);
+Arv* maior_valor(Arv* a);
 #endif	/* AB_H */
 

@@ -34,3 +34,19 @@ void arv_imprime(Arv* a) {
         arv_imprime(a->dir); /* mostra sad */
     }
 }
+
+Arv* maior_valor(Arv* r) {
+    if (!r) return NULL;
+    Arv *maiorEsq = r;
+    Arv *maiorDir = r;
+    Arv *maior = r;
+    if (r->esq){
+        maiorEsq = maior_valor(r->esq);
+    }
+    if (r->dir){
+        maiorDir = maior_valor(r->dir);
+    }
+    if(maiorEsq->info>r->info) maior= maiorEsq;
+    if(maiorDir->info>maior->info) maior= maiorDir;
+    return maior;
+}

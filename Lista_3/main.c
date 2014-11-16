@@ -25,6 +25,11 @@ int main(int argc, char** argv) {
                                              arv_cria(4,NULL,NULL),
                                              NULL)));
     arv_imprime(raiz);
-    return (EXIT_SUCCESS);
+    
+    //Exercício 2
+    Arv* maior = maior_valor(raiz);
+    printf("\n%d\n", maior->info);
+    system("pause");
+    return (0);
 }
 
