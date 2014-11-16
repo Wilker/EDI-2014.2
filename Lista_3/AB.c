@@ -40,19 +40,33 @@ Arv* maior_valor(Arv* r) {
     Arv *maiorEsq = r;
     Arv *maiorDir = r;
     Arv *maior = r;
-    if (r->esq){
+    if (r->esq) {
         maiorEsq = maior_valor(r->esq);
     }
-    if (r->dir){
+    if (r->dir) {
         maiorDir = maior_valor(r->dir);
     }
-    if(maiorEsq->info>r->info) maior= maiorEsq;
-    if(maiorDir->info>maior->info) maior= maiorDir;
+    if (maiorEsq->info > r->info) maior = maiorEsq;
+    if (maiorDir->info > maior->info) maior = maiorDir;
     return maior;
 }
 
-int conta_folhas(Arv* a){
-    if(!a)return 0;
-    if((!a->esq) && (!a->dir)) return 1;
+int conta_folhas(Arv* a) {
+    if (!a)return 0;
+    if ((!a->esq) && (!a->dir)) return 1;
     return conta_folhas(a->esq) + conta_folhas(a->dir);
+}
+
+int conta_internos(Arv* a) {
+
+}
+
+int altura(Arv* a) {
+    if (!a)return -1;
+    return 1 + maximo(altura(a->esq), altura(a->dir));
+}
+
+int maximo(int x, int y) {
+    if (x > y)return x;
+    return y;
 }

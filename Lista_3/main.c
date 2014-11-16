@@ -35,6 +35,9 @@ int main(int argc, char** argv) {
     int folhas = conta_folhas(raiz);
     printf("%d\n", folhas);
     
+    //Exercício 5
+    int alt = altura(raiz);
+    printf("%d\n", alt);
     
     system("pause");
     return (0);
