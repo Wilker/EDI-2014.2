@@ -1,15 +1,15 @@
 #include "AB.h"
 #include <stdio.h>
 
-Arv* arv_cria(int x, Arv* sae, Arv* sad) {
-    Arv* p = (Arv*) malloc(sizeof (Arv));
+AB* arv_cria(int x, AB* sae, AB* sad) {
+    AB* p = (AB*) malloc(sizeof (AB));
     p->info = x;
     p->esq = sae;
     p->dir = sad;
     return p;
 }
 
-void arv_libera(Arv* a) {
+void arv_libera(AB* a) {
     if (a != NULL) {
         arv_libera(a->esq); /* libera sae */
         arv_libera(a->dir); /* libera sad */
@@ -17,7 +17,7 @@ void arv_libera(Arv* a) {
     }
 }
 
-int arv_contem(Arv* a, int x) {
+int arv_contem(AB* a, int x) {
     if (a == NULL)
         return 0; /* árvore vazia: não encontrou */
     if (a->info == x)
@@ -27,7 +27,7 @@ int arv_contem(Arv* a, int x) {
             arv_contem(a->dir, x));
 }
 
-void arv_imprime(Arv* a) {
+void arv_imprime(AB* a) {
     if (a != NULL) {
         printf("%d ", a->info); /* mostra raiz */
         arv_imprime(a->esq); /* mostra sae */
@@ -35,11 +35,11 @@ void arv_imprime(Arv* a) {
     }
 }
 
-Arv* maior_valor(Arv* r) {
+AB* maior_valor(AB* r) {
     if (!r) return NULL;
-    Arv *maiorEsq = r;
-    Arv *maiorDir = r;
-    Arv *maior = r;
+    AB *maiorEsq = r;
+    AB *maiorDir = r;
+    AB *maior = r;
     if (r->esq) {
         maiorEsq = maior_valor(r->esq);
     }
@@ -51,17 +51,17 @@ Arv* maior_valor(Arv* r) {
     return maior;
 }
 
-int conta_folhas(Arv* a) {
+int conta_folhas(AB* a) {
     if (!a)return 0;
     if ((!a->esq) && (!a->dir)) return 1;
     return conta_folhas(a->esq) + conta_folhas(a->dir);
 }
 
-int conta_internos(Arv* a) {
+int conta_internos(AB* a) {
 
 }
 
-int altura(Arv* a) {
+int altura(AB* a) {
     if (!a)return -1;
     return 1 + maximo(altura(a->esq), altura(a->dir));
 }
@@ -69,4 +69,9 @@ int altura(Arv* a) {
 int maximo(int x, int y) {
     if (x > y)return x;
     return y;
+}
+
+
+int nivel(AB* a, int x){
+    
 }

@@ -51,8 +51,21 @@ int main(int argc, char** argv) {
      r = abb_insere(r,4);
      r = abb_insere(r,7);
      r = abb_insere(r,13);
-    arv_imprime(r);
+     //arv_imprime(r);
     printf("\n");
+    
+    //Exercício 8
+    int maiorABB = maior_valorABB(r);
+    printf("%d\n",maiorABB);
+    
+    //Exercício 9
+    ABB *menor = menor_valorABB(r);
+    printf("%d\n",menor->info);
+    
+    //Exercício 11
+    int nBin = verifica_abb(raiz);
+    int bin = verifica_abb(r);
+    printf("%d  %d\n",nBin,bin);
     
     system("pause");
     return (0);

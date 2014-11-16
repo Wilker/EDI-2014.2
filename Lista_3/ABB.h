@@ -15,7 +15,10 @@ typedef struct ABB {
  }ABB;
  
  ABB* abb_insere(ABB* a, int v);
- 
+ int maior_valorABB(ABB* a);
+ ABB* menor_valorABB(ABB* a);
+ int verifica_abb(ABB* a);
+
 
 #endif	/* ABB_H */
 

@@ -5,11 +5,13 @@
                    displayName="Arquivos de Cabeçalho"
                    projectFiles="true">
       <itemPath>AB.h</itemPath>
+      <itemPath>ABB.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Arquivos de Código-Fonte"
                    projectFiles="true">
       <itemPath>AB.c</itemPath>
+      <itemPath>ABB.c</itemPath>
       <itemPath>main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"

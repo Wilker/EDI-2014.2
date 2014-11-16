@@ -8,22 +8,23 @@
 #ifndef AB_H
 #define	AB_H
 
-typedef struct Arv {
+typedef struct AB {
     int info;
-    struct Arv* esq;
-    struct Arv* dir;
-}Arv;
+    struct AB* esq;
+    struct AB* dir;
+}AB;
 
 
 
-Arv* arv_cria(int x, Arv* sae, Arv* sad);
-void arv_libera (Arv* a);
-int arv_contem (Arv* a, int x);
-void arv_imprime (Arv* a);
-Arv* maior_valor(Arv* a);
-int conta_folhas(Arv* a);
-int conta_internos(Arv* a);
-int altura(Arv* a);
+AB* arv_cria(int x, AB* sae, AB* sad);
+void arv_libera (AB* a);
+int arv_contem (AB* a, int x);
+void arv_imprime (AB* a);
+AB* maior_valor(AB* a);
+int conta_folhas(AB* a);
+int conta_internos(AB* a);
+int altura(AB* a);
+int nivel(AB* a, int x);
 
 #endif	/* AB_H */
 
