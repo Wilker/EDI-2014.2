@@ -50,3 +50,9 @@ Arv* maior_valor(Arv* r) {
     if(maiorDir->info>maior->info) maior= maiorDir;
     return maior;
 }
+
+int conta_folhas(Arv* a){
+    if(!a)return 0;
+    if((!a->esq) && (!a->dir)) return 1;
+    return conta_folhas(a->esq) + conta_folhas(a->dir);
+}

@@ -21,5 +21,6 @@ void arv_libera (Arv* a);
 int arv_contem (Arv* a, int x);
 void arv_imprime (Arv* a);
 Arv* maior_valor(Arv* a);
+int conta_folhas(Arv* a);
 #endif	/* AB_H */
 

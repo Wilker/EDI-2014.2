@@ -25,10 +25,17 @@ int main(int argc, char** argv) {
                                              arv_cria(4,NULL,NULL),
                                              NULL)));
     arv_imprime(raiz);
+    printf("\n");
     
     //Exercício 2
     Arv* maior = maior_valor(raiz);
-    printf("\n%d\n", maior->info);
+    printf("%d\n", maior->info);
+    
+    //Exercício 3
+    int folhas = conta_folhas(raiz);
+    printf("%d\n", folhas);
+    
+    
     system("pause");
     return (0);
 }
