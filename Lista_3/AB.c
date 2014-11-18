@@ -58,7 +58,14 @@ int conta_folhas(AB* a) {
 }
 
 int conta_internos(AB* a) {
-
+    int qntNos = 0, qntFolhas = 0;
+    qntNos = conta_nos(a);
+    qntFolhas =conta_folhas(a);
+    return qntNos-qntFolhas;
+}
+int conta_nos(AB* a){
+    if(!a)return 0;
+    return conta_nos(a->esq)+conta_nos(a->dir)+1;
 }
 
 int altura(AB* a) {
@@ -71,7 +78,6 @@ int maximo(int x, int y) {
     return y;
 }
 
+int nivel(AB* a, int x) {
 
-int nivel(AB* a, int x){
-    
 }
